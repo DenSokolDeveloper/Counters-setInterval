@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="new.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<button onclick="thiser=setInterval(startTimerPluser,1000)">ClikPlusStart</button>
+<button onclick="thiser=setInterval(startTimerMinuser,1000)">ClikMinus</button>
+<button onclick="clearInterval(thiser,counterReturner())">Show Currently Count</button>
+
+<script>
+let counter =1;
+let thiser;
+let curenter;
+    function startTimerPluser() {
+        console.log('Hello');
+        curenter=counter++;
+        console.log('counter now: '+curenter);
+
+    };
+function startTimerMinuser() {
+    console.log('Hello');
+    curenter=counter--;
+    console.log('counter now: '+curenter);
+
+};
+
+    function counterReturner() {
+        console.log('currently counter is: '+curenter);
+    }
+
+
+
+</script>
+</body>
+</html>
