@@ -17,18 +17,18 @@
 <button onclick="clearInterval(thiser,counterReturner())">Show Currently Count</button>
 
 <script>
-let counter =1;
+let counter =0;
 let thiser;
 let curenter;
     function startTimerPluser() {
         console.log('Hello');
-        curenter=counter++;
+        curenter=++counter;
         console.log('counter now: '+curenter);
 
     };
 function startTimerMinuser() {
     console.log('Hello');
-    curenter=counter--;
+    curenter=--counter;
     console.log('counter now: '+curenter);
 
 };
